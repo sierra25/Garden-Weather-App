@@ -4,6 +4,7 @@
     rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"
   />
+  <link rel="stylesheet" href="style.css">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,85 +21,49 @@
         <!--Gets User Input Field-->
         <div class="container searchContainer">
           <div class="search card card-body">
-                <h1>Get The Weather For a Location</h1>
+                <h1>Get The Garden Weather For a Location</h1>
                 
-                <p class="lead">Enter Your Location</p>
+                <p class="lead">Enter Your City Name and Click Submit Button</p>
                 
                 <input type="text" id="searchUser" class="form-control" placeholder="Location">
+                <p class="lead">Example: austin, round rock, etc...</p>
+                
+                
+              <div class="container text-center mt-2">
+                  <button class="btn btn-primary" id="submit">Submit</button>
+
+
+                  <!--Dynamically rendered weather content-->
+                  <div id="content">
+
+                  </div>
+
+                  
+              </div>
+
+              
+            </div>
 
             </div>
-            <br>
+         
 
 
 
             
-            <div id="profile"></div>
-        </div>
-        <div class="container text-center mt-2">
-            <button class="btn btn-primary" id="submit">Submit</button>
-        </div>
+    
 
         
         <br>
-        <div id="content">
-
-        </div>
-        <br>
-        <div id="ratings">
-
-        </div>
-        <br>
-        <div class="ratings card card-body container">
-          A frost date is the average date of the last light freeze in spring or the first light freeze in fall.
-          The classification of freeze temperatures is based on their effect on plants:
-          Light freeze: 29° to 32°F (-1.7° to 0°C)—tender plants are killed.
-          Moderate freeze: 25° to 28°F (-3.9° to -2.2°C)—widely destructive to most vegetation.
-          Severe freeze: 24°F (-4.4°C) and colder—heavy damage to most garden plants.
-
-        </div>
-        <br>
-        <div class="card card-body container">
-          
-        <p>Cool season vegetables prefer cool daytime temperatures, while warm season vegetables prefer warmer daytime temperatures. Cool season vegetables like cauliflower, broccoli, and lettuce will tolerate light frost whereas warm season vegetables like tomatoes and peppers are not frost tolerant.
-        </p>
-        </div>
       
+        <!--Dynamically rendered plant info-->
+        <div id="ratings" class="ratingbox">
+
+        </div>
+        <div id="ratings" class="ratingbox">
+
+        </div>
+        
         <br>
-        <div class="card card-body container">
-        <p>
-        Common warm-season vegetables: beans, corn, cucumbers, eggplant, melons, peppers, zucchini and summer squash, pumpkin and winter squash, sweet potato, tomato, watermelon.
-
-        Summer crops, also called warm-season crops, are vegetables that grow best in hot summertime weather. Popular summer crops to grow in your garden include corn, watermelons, tomatoes, squash, cucumbers, beans, sweet potatoes, tomatoes, peppers, and pumpkins
-
-        Cucumbers subjected to 40-degree temperatures will develop damaged leaves, stems, and fruit. Cucumber plants rarely recover from cold damage—damaged cucumber plants should be pulled out and replaced.
-        </p>
-        <br>
-
-        <div class="temp-info-board card card-body container">
-          A frost date is the average date of the last light freeze in spring or the first light freeze in fall.
-          The classification of freeze temperatures is based on their effect on plants:
-          Light freeze: 29° to 32°F (-1.7° to 0°C)—tender plants are killed.
-          Moderate freeze: 25° to 28°F (-3.9° to -2.2°C)—widely destructive to most vegetation.
-          Severe freeze: 24°F (-4.4°C) and colder—heavy damage to most garden plants.
-
-        </div>
-
-
-
-        <div>
-          Here are temperatures needed for growing vegetables:
-
-          • Cool-weather vegetables require a minimum average soil temperature of 40° to 50°F (4-10°C) for planting, and an average air temperature range of 60° to 85°F/15-29°C (optimal is 70°F/21°C) for sustained growth. The maximum air temperature for cool-weather crop productivity is 86°F (30°C), above this temperature cool-weather crops will bolt—meaning flower and set seed–or quit growing.
-
-          • Warm-weather vegetables require a minimum average soil temperature of 50°F (10°C) for planting and an average minimum air temperature of 75°F (24°C) for sustained growth. The maximum air temperature for warm-weather crop productivity is 110°F (43°C), above this temperature most warm-weather crops will die, just as they are likely to die at 32°F (0°C).
-
-          Temperature affects a plant’s rate of growth. The higher the soil and air temperature above the minimum, the faster a plant will grow. Two-thirds of the growth time necessary for a plant to reach harvest and maturity should be at or above the optimal air temperature; the remaining one-third should be between the minimum and optimal air temperature.
-        </div>
-
-        </p>
-
-        </div>
-
 
 
 

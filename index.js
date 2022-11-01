@@ -17,6 +17,7 @@ button.addEventListener("click", () => {
     /*calls a UI method*/
     ui.populateUI(data);
     ui.populatePlantRatings(data);
+    ui.calculateColdCropTemperatureRange(data);
 
 
     /*calls saveToLS to save to local storage*/
@@ -29,6 +30,8 @@ window.addEventListener("DOMContentLoaded", () => {
   const dataSaved = ui.getFromLS();
   ui.populateUI(dataSaved);
   ui.populatePlantRatings(dataSaved);
+  ui.calculateColdCropTemperatureRange(dataSaved);
+  
 });
 
 
