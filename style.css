@@ -4,10 +4,12 @@ body{
 #page-container {
     position: relative;
     min-height: 100vh;
+    z-index:5;
   }
   
 #content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
+    padding-bottom: 2.5rem; 
+    z-index:4;   /* Footer height */
 }
 footer {
     position: absolute;
@@ -16,4 +18,70 @@ footer {
     height: 2.5rem;          
   }
 
-  
+  /*Adding Style to Footer*/
+
+  .new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background: url("https://gardentutor.com/wp-content/uploads/2019/01/garden-bg.png") no-repeat scroll center;
+    width: 100%;
+    background-size: cover;
+    height: 1200px;
+    z-index:-10; 
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+    background: url( "https://thumbs.gfycat.com/WellmadeSameBeaver-max-1mb.gif") no-repeat center center;
+    width: 330px;
+    height: 540px;
+  background-size:100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+    
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+    background: url("https://i.pinimg.com/originals/54/d3/ae/54d3ae04cae803cafc21389dfd31fc88.gif") no-repeat center center;
+    width: 330px;
+    height: 540px;
+  background-size:100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+    animation-delay: -10s;
+}
+
+
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
