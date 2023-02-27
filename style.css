@@ -31,6 +31,7 @@ footer {
     z-index:-10; 
 }
 
+/* Did not like the animation as much as I thought I would so will remove it for now -  This animation is a sun and storm cloud moving across the screen
 .new_footer_top .footer_bg .footer_bg_one {
     background: url( "https://thumbs.gfycat.com/WellmadeSameBeaver-max-1mb.gif") no-repeat center center;
     width: 330px;
@@ -85,3 +86,4 @@ footer {
     left: 100%;
   }
 }
+*/
